@@ -1,0 +1,39 @@
+extends base
+
+block head_content
+    //- link(rel='stylesheet', href='/css/style.css')
+
+block include_header_navigation
+    include _nav
+
+block page_content
+
+    section.main-section
+        h1.heading-primary.c-main مدخلك الى العلوم الشرعية
+        .container.mt-5
+            .row 
+                .col-lg-6.col-12.center
+                    a(href="/fekh")  
+                        button.btn.btn-main.goDown
+                            img.leson-img(src="/img/ddd.png", alt="") 
+                            h4.mt-3.c-main الفقه
+                .col-lg-6.col-12.center
+                    a(href="/sera")  
+                        button.btn.btn-main.goDown
+                            img.leson-img(src="/img/ddd.png", alt="") 
+                            h4.mt-3 السيرة
+                .col-12.mb-5.mt-5.center
+                    a(href="/akeda").center
+                        button.btn.btn-main.goDown
+                            img.leson-img(src="/img/ddd.png", alt="") 
+                            h4.mt-3 العقيدة
+                .col-lg-6.col-12.center
+                    a(href="/hadith")  
+                        button.btn.btn-main.goDown
+                            img.leson-img(src="/img/ddd.png", alt="")
+                            h4.mt-3 الحديث 
+                .col-lg-6.col-12.center
+                    a(href="/tafser")
+                        button.btn.btn-main.goDown
+                            img.leson-img(src="/img/ddd.png", alt="") 
+                            h4.mt-3 التفسير

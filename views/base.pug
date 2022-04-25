@@ -1,0 +1,24 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title ما لا يسع المسلم جهله
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        link(rel='icon' type='image/x-icon' href='/img/logo-1.png')
+        link(rel='stylesheet' href='/css/bootstrap.min.css')
+        link(rel="stylesheet" href="/css/icofont.min.css")
+        block head_content
+        link(rel='stylesheet' href='/css/frontStyle.css')
+        script(src='/js/jquery.min.js ')
+        script(src='/js/bootstrap.min.js')
+        script(defer src='/js/back.js') 
+        script(defer src='/js/index.js') 
+        script(src="/js/axios.min.js")
+    body
+        // include header navigation
+        block include_header_navigation
+
+        // Content
+        block page_content
+        // include footer
+        block include_footer

@@ -1,0 +1,36 @@
+// Navigation Bar
+nav.navbar.navbar-expand-lg.navbar-light
+    .container
+        a.navbar-logo.center(href='/main')
+            img.logo-mousqe(src="/img/logo-1.png", alt="" )
+            h1.main-heading.mt-4.c-main ما لا يسع المسلم جهله
+        .navigation
+                input(type="checkbox" class="navigation__checkbox" id="navi-toggle")
+
+                label(for="navi-toggle" class="navigation__button")
+                    span.navigation__icon &nbsp;
+                
+                .navigation__background &nbsp;
+
+                nav.navigation__nav
+                    ul.navigation__list
+                        li.navigation__item 
+                            a.navigation__link(href="/akeda")
+                                span 01
+                                | العقيدة
+                        li.navigation__item 
+                            a.navigation__link.nav__el--(href="/fekh")
+                                span 02
+                                | الفقه
+                        li.navigation__item 
+                            a.navigation__link.nav__el--(href="/sera")
+                                span 03
+                                | السيرة
+                        li.navigation__item 
+                            a.navigation__link.nav__el--(href="/hadith")
+                                span 04
+                                | الحديث
+                        li.navigation__item 
+                            a.navigation__link.nav__el--(href="/tafser")
+                                span 05
+                                | التفسير
